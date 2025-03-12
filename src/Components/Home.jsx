@@ -8,6 +8,7 @@ import Canara from '../Assets/Canara.svg'
 import  RedeemAccordion  from './RedeemAccordion'
 import { CopyButton } from './copyButton';
 import { XMarkIcon } from "@heroicons/react/24/outline";  
+import { ArrowLeftIcon } from '@heroicons/react/24/solid';
 
 const redeemSteps = [
     "Go to the official website and log in.",
@@ -152,6 +153,12 @@ return(
     <>
     <div className='w-screen overflow-y-auto min-h-screen md:px-10'>
         <div className='overflow-x-hidden max-w-[1200px]  m-auto'>
+        <Button
+                    onClick={()=>navigate('/exitpwa')}
+                    className="absolute top-2 left-2 bg-white text-black rounded-full p-1 m-1 z-[1000] w-7 md:left-10"
+                >
+                    <ArrowLeftIcon style={{ fontSize: '2rem' }} />
+        </Button>
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-[#3B2463] to-[#7D4DA1] p-4">
         {loading && (
         <motion.div
