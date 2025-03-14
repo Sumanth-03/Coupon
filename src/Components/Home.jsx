@@ -231,7 +231,7 @@ return(
           </div>
           <Button
             className="w-[90%] bg-[#F15A24] text-white text-[1.2rem] rounded-[10px] capitalize shadow-md hover:bg-[#d94e1f] transition-all py-2 mt-4"
-            onClick={() => window.open(apiRes?.promoLink)}
+            onClick={() => navigate('/exitpwa?launch='+'PGNsaWNrPmh0dHBzOi8vd3d3LnpvbWF0by5jb20vZ29sZC8/dHlwZT1oeXBlcmxpbms8L2NsaWNrPg==')}
             >
             Claim
           </Button>
@@ -243,6 +243,12 @@ return(
             <span className="text-lg font-semibold text-gray-800">{apiRes?.coupon_code}</span>
             <CopyButton textToCopy={apiRes?.coupon_code} />
           </div>
+          <Button
+            className="w-[90%] bg-[#F15A24] text-white text-[1.2rem] rounded-[10px] capitalize shadow-md hover:bg-[#d94e1f] transition-all py-2 mt-4"
+            onClick={() => navigate('/exitpwa?launch='+'PGNsaWNrPmh0dHBzOi8vd3d3LnpvbWF0by5jb20vZ29sZC8/dHlwZT1oeXBlcmxpbms8L2NsaWNrPg==')}
+            >
+            Claim
+          </Button>
           </>
           
           }
